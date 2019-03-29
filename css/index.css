@@ -308,3 +308,41 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .top-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+}
+.home .top-content .top-heading {
+  width: 100%;
+  padding: 2%;
+}
+.home .top-content .top-text-image {
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2%;
+  border-radius: 10px;
+  margin: 2%;
+}
+.home .top-content .top-text-image .top-text {
+  width: 45%;
+}
+.home .top-content .top-text-image .top-img {
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .home .top-content .top-text-image {
+    display: none;
+  }
+}
+.home .how-far {
+  padding: 15px;
+}
+.home .how-far h3 {
+  margin-top: 11px;
+}
+.home .how-far p {
+  margin-top: 13px;
+}

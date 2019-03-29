@@ -106,11 +106,64 @@
         margin: 4%;
       }
       
+   
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
-      }
+      } 
     }
   }
+
+// About Us Page
+
+.top-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  // .test();
+
+  .top-heading {
+    width: 100%;
+    padding: 2%;
+  }
+  .top-text-image {
+    flex-direction: row;
+    flex-wrap: wrap;
+    .top-text {
+      width: 45%;
+    }
+    .top-img {
+      width: 45%;
+    }
+    padding: 2%;
+    border-radius: 10px;
+    margin: 2%;
+    @media @mobile {
+      display: none;
+    }
+  }
+}
+
+  .how-far {
+    padding: 15px;
+
+    h3 {
+      margin-top: 11px;
+    }
+
+    p {
+      margin-top: 13px;
+    }
+  }
+
+
+
+
+
+
+
+
 }// home
