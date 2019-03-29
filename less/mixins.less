@@ -1,1 +1,27 @@
 // Mixins Here
+
+.test() {
+    background: lightgoldenrodyellow;
+    border: 1px dotted orange;
+}
+
+.custom-btn(@bg-color: @btn-bg-color, @btn-width: 100px) {
+    background-color: @bg-color;
+    width: @btn-width;
+    height: 35px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px 2rem;
+    cursor: pointer;
+    &:hover {
+        background-color: white;
+        color: @btn-bg-color;
+        border: 1px solid @btn-bg-color;
+    }
+}
+
+.mobile-layout() {
+    width: 100%;
+}
