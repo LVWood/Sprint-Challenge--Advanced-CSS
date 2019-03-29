@@ -10,14 +10,18 @@
     width: @btn-width;
     height: 35px;
     color: white;
-    border-radius: 15%;
+    border-radius: 10px;
     text-align: center;
     font-size: 1.5rem;
     padding: 10px 2rem;
     cursor: pointer;
     &:hover {
-        background-color: lighten(@btn-bg-color, 20%);
-        color: @waterloo;
+        background-color: white;
+        color: @btn-bg-color;
+        border: 1px solid @btn-bg-color;
     }
 }
 
+.mobile-layout() {
+    width: 100%;
+}
