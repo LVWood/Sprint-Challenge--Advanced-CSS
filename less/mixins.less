@@ -4,3 +4,20 @@
     background: lightgoldenrodyellow;
     border: 1px dotted orange;
 }
+
+.custom-btn(@bg-color: @btn-bg-color, @btn-width: 100px) {
+    background-color: @bg-color;
+    width: @btn-width;
+    height: 35px;
+    color: white;
+    border-radius: 15%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px 2rem;
+    cursor: pointer;
+    &:hover {
+        background-color: lighten(@btn-bg-color, 20%);
+        color: @waterloo;
+    }
+}
+
